@@ -1,0 +1,12 @@
+{
+    "name": "Lisk",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Access the lisk.support tools or check your account or even send payments with nano",
+    "permissions": [
+      "contextMenus"
+     ],
+    "background": { 
+      "scripts": ["script.js"]
+    }
+}
