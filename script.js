@@ -1,6 +1,6 @@
 function isAddress(address) {
 	result = false;
-	if(/d*L/.test(address)){
+	if(/^\d+L$/.test(address)){
 		result = true;
 	}
 	else{
@@ -24,7 +24,7 @@ function explorer(address,tab) {
 }
 
 function sendWithNano(address,tab) {
-	if(isAddress(address.selectionText)){
+	if(isAddress(address.selectionText.trim())){
 		chrome.tabs.create({  
 			url: "lisk://main/transactions/send?recipient=" + address.selectionText,
 		});   
