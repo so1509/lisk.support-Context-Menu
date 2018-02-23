@@ -10,7 +10,9 @@ function isAddress(address) {
                         title: "Not a Lisk address!",
                         message: "Uh oh, that's not a valid Lisk address."
                     };
-        chrome.notifications.create('limitNotif', notifOptions);
+        chrome.notifications.create('limitNotif', notifOptions, function(id) {
+			timer = setTimeout(function(){chrome.notifications.clear(id);}, 3000);
+	});
 	}
 	return result;
 }
