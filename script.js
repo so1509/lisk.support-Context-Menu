@@ -10,32 +10,33 @@ function isAddress(address) {
                         title: "Not a Lisk address!",
                         message: "Uh oh, that's not a valid Lisk address."
                     };
-                    chrome.notifications.create('limitNotif', notifOptions);
+        chrome.notifications.create('limitNotif', notifOptions);
 	}
 	return result;
 }
 
 function explorer(address,tab) {
-		if(isAddress(address.selectionText)){
+	if(isAddress(address.selectionText)){
 		chrome.tabs.create({  
 			url: "https://explorer.lisk.io/address/" + address.selectionText,
 		});
-		}
+	}
 }
 
 function sendWithNano(address,tab) {
 	if(isAddress(address.selectionText)){
-  chrome.tabs.create({  
-    url: "lisk://main/transactions/send?recipient=" + address.selectionText,
-  });   
+		chrome.tabs.create({  
+			url: "lisk://main/transactions/send?recipient=" + address.selectionText,
+		});   
 	}  
 }
+
 function voteManager(address,tab) {
-		if(isAddress(address.selectionText)){
+	if(isAddress(address.selectionText)){
 		chrome.tabs.create({  
 			url: "https://lisk.builders/votemanager/" + address.selectionText,
 		});
-		}
+	}
 }
 
 chrome.contextMenus.create({
