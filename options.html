@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head><title>Lisk Utilities Options Page</title></head>
-<body>
-
-Personal LISK adress:
-<input type="text" id="name">
- 
-</select>
-
-<label>
-  <input type="checkbox" id="like">
-  I like colors.
-</label>
-
-<div id="status"></div>
-<button id="save">Save</button>
-
+<link rel="stylesheet" type="text/css" href="options.css">
 <script src="options.js"></script>
+<head>
+<title>Lisk Utilities Options Page</title>
+</head>
+<body>
+	<header id="header">
+		<img src="favicon-large.png">
+
+	</header>
+	<div id="options">
+		<table>
+			<tbody>
+				<tr>
+					<td>Personal LISK adress:</td>
+					<td><input type="text" id="pLSKAdd"> (Current:
+						123456789101112L)</td>
+				</tr>
+				<tr>
+					<td>Choose Currency for Conversion (POPUP)</td>
+					<td><select id="currency">
+							<option value="EUR">EUR</option>
+							<option value="USD">USD</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>
+						<button id="save">Save</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div></div>
+		<div id="status"></div>
+
+
+
+
+	</div>
+	</footer>
 </body>
 </html>

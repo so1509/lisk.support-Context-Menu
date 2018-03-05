@@ -1,0 +1,28 @@
+#header {
+	background: #F1F1F1;
+	padding-left: 50px;
+}
+
+#options {
+	font-size: 1.5em;
+	margin-left: 50px;
+	padding-top: 50px;
+}
+
+table {
+	width: 100%;
+}
+
+table, th, td {
+	border-spacing: 0px;
+	padding: 10px;
+}
+
+th, td {
+	text-align: left;
+	width: 100px;
+}
+
+#footer {
+	background: #F1F1F1;
+}
