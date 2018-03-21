@@ -1,6 +1,22 @@
 #header {
 	background: #F1F1F1;
 	padding-left: 50px;
+	width: 100%;
+}
+
+#header table {
+	width: 100%;
+}
+
+#header table, #header th, #header td {
+	border-spacing: 0px;
+	padding: 10px;
+}
+
+#header th, #header td {
+	text-align: left;
+	width: 100%;
+	padding-left: 20px;
 }
 
 #options {
@@ -9,18 +25,17 @@
 	padding-top: 50px;
 }
 
-table {
-	width: 100%;
+#options table {
+	width: 80%;
 }
 
-table, th, td {
+#options table, #options th, #options td {
 	border-spacing: 0px;
 	padding: 10px;
 }
 
-th, td {
+#options th, #options td {
 	text-align: left;
-	width: 100px;
 }
 
 #footer {

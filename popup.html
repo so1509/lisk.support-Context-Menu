@@ -2,9 +2,6 @@
 <html>
 <head>
 <title>LISK</title>
-<script src="jquery-3.3.1.min.js">
-	
-</script>
 <script src="popup.js">
 	
 </script>
@@ -18,18 +15,20 @@
 	</div>
 	<hr>
 	<div>
-		<a href="https:" id="image" style="line-height: 36px; display: inline;">
-			<img src="LSK.png" style="vertical-align: middle;">
-		</a>
+		<div id="image" style="line-height: 36px; display: inline;">
+			<img id="lskImage" src="LSK.png"
+				style="vertical-align: middle; cursor: pointer">
+		</div>
 		<table class=rateTable>
 			<tbody>
 				<tr>
-					<th>LSK/EUR</th>
+					<th>LSK/<span id="currencyCode"></span></th>
 					<th>LSK/BTC</th>
 				</tr>
 				<tr>
-					<td><span id="currency"></span> EUR</td>
-					<td><span id="btc"></span> BTC</td>
+					<td><span id="currencyValue"></span> &nbsp;<span
+						id="currencyCode1"></span></td>
+					<td><span id="btcValue"></span> BTC</td>
 				</tr>
 			</tbody>
 		</table>

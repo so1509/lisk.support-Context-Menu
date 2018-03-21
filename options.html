@@ -7,23 +7,71 @@
 </head>
 <body>
 	<header id="header">
-		<img src="favicon-large.png">
-
+		<img style="vertical-align: middle;" src="favicon-large.png">
+		<table style="display: inline; padding-left: 30px;">
+			<tbody>
+				<tr>
+					<td>
+						<h1>Lisk.support Utilities</h1>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2>OPTIONS PAGE</h2>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</header>
 	<div id="options">
 		<table>
 			<tbody>
 				<tr>
-					<td>Personal LISK adress:</td>
-					<td><input type="text" id="pLSKAdd"> (Current:
-						123456789101112L)</td>
-				</tr>
-				<tr>
 					<td>Choose Currency for Conversion (POPUP)</td>
 					<td><select id="currency">
+							<option value="AUD">AUD</option>
+							<option value="BRL">BRL</option>
+							<option value="CAD">CAD</option>
+							<option value="CHF">CHF</option>
+							<option value="CLP">CLP</option>
+							<option value="CNY">CNY</option>
+							<option value="CZK">CZK</option>
+							<option value="DKK">DKK</option>
 							<option value="EUR">EUR</option>
+							<option value="GBP">GBP</option>
+							<option value="HKD">HKD</option>
+							<option value="HUF">HUF</option>
+							<option value="IDR">IDR</option>
+							<option value="ILS">ILS</option>
+							<option value="INR">INR</option>
+							<option value="JPY">JPY</option>
+							<option value="KRW">KRW</option>
+							<option value="MXN">MXN</option>
+							<option value="MYR">MYR</option>
+							<option value="NOK">NOK</option>
+							<option value="NZD">NZD</option>
+							<option value="PHP">PHP</option>
+							<option value="PKR">PKR</option>
+							<option value="PLN">PLN</option>
+							<option value="RUB">RUB</option>
+							<option value="SEK">SEK</option>
+							<option value="SGD">SGD</option>
+							<option value="THB">THB</option>
+							<option value="TRY">TRY</option>
+							<option value="TWD">TWD</option>
 							<option value="USD">USD</option>
+							<option value="ZAR">ZAR</option>
 					</select></td>
+				</tr>
+				<tr>
+					<td>Personal LISK address:</td>
+					<td><input type="text" id="storedLSKAdd"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td style="font-style: italic; font-size: 0.9em;">Use your
+						personal address to quick-paste it into any textfield within
+						Chrome. <br/> Right click -> "Paste LSK Address" within your Lisk Context Menu</td>
 				</tr>
 				<tr>
 					<td>
@@ -39,6 +87,5 @@
 
 
 	</div>
-	</footer>
 </body>
 </html>
